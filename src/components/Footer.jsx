@@ -73,7 +73,7 @@ const Footer = () => {
           <ul className='space-y-2.5 text-sm text-slate-400'>
             <li className='flex items-center gap-2.5'>
               <Phone className='w-4 h-4 text-primary shrink-0' />
-              <span>+1 (800) 555-0199</span>
+              <span>+91 (800) 555-0199</span>
             </li>
             <li className='flex items-center gap-2.5'>
               <Mail className='w-4 h-4 text-primary shrink-0' />
@@ -81,7 +81,7 @@ const Footer = () => {
             </li>
             <li className='flex items-start gap-2.5'>
               <MapPin className='w-4 h-4 text-primary shrink-0 mt-1' />
-              <span>100 Health Sciences Plaza, Suite 400, New York, NY 10001</span>
+              <span>100 Health Sciences Plaza, MG Road, Bengaluru, Karnataka 560001</span>
             </li>
           </ul>
         </div>

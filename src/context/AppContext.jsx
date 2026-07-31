@@ -4,29 +4,29 @@ import { doctorsData, initialAppointmentsData, assets } from '../assets/assets'
 export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
-  const currencySymbol = '$'
+  const currencySymbol = '₹'
   
   // Local storage initialization for persistent state
   const [doctors, setDoctors] = useState(() => {
-    const saved = localStorage.getItem('prescripto_doctors')
+    const saved = localStorage.getItem('prescripto_doctors_v2')
     return saved ? JSON.parse(saved) : doctorsData
   })
 
   const [appointments, setAppointments] = useState(() => {
-    const saved = localStorage.getItem('prescripto_appointments')
+    const saved = localStorage.getItem('prescripto_appointments_v2')
     return saved ? JSON.parse(saved) : initialAppointmentsData
   })
 
   const [userData, setUserData] = useState(() => {
-    const saved = localStorage.getItem('prescripto_userdata')
+    const saved = localStorage.getItem('prescripto_userdata_v2')
     return saved ? JSON.parse(saved) : {
-      name: 'Alex Johnson',
-      email: 'alex.johnson@example.com',
-      phone: '+1 (555) 234-5678',
+      name: 'Aarav Sharma',
+      email: 'aarav.sharma@example.com',
+      phone: '+91 98765 43210',
       image: assets.profile_pic,
       address: {
-        line1: '57th Cross, Richmond Circle',
-        line2: 'Church Street, New York'
+        line1: '57th Cross, Indiranagar',
+        line2: 'MG Road, Bengaluru'
       },
       gender: 'Male',
       dob: '1996-05-15'
@@ -35,6 +35,14 @@ const AppContextProvider = (props) => {
 
   const [token, setToken] = useState(() => {
     return localStorage.getItem('prescripto_token') || 'demo_patient_token'
+  })
+
+  const [aToken, setAToken] = useState(() => {
+    return localStorage.getItem('prescripto_aToken') || ''
+  })
+
+  const [dToken, setDToken] = useState(() => {
+    return localStorage.getItem('prescripto_dToken') || ''
   })
 
   const [userRole, setUserRole] = useState(() => {
@@ -47,15 +55,15 @@ const AppContextProvider = (props) => {
 
   // Save changes to LocalStorage
   useEffect(() => {
-    localStorage.setItem('prescripto_doctors', JSON.stringify(doctors))
+    localStorage.setItem('prescripto_doctors_v2', JSON.stringify(doctors))
   }, [doctors])
 
   useEffect(() => {
-    localStorage.setItem('prescripto_appointments', JSON.stringify(appointments))
+    localStorage.setItem('prescripto_appointments_v2', JSON.stringify(appointments))
   }, [appointments])
 
   useEffect(() => {
-    localStorage.setItem('prescripto_userdata', JSON.stringify(userData))
+    localStorage.setItem('prescripto_userdata_v2', JSON.stringify(userData))
   }, [userData])
 
   useEffect(() => {
@@ -67,8 +75,33 @@ const AppContextProvider = (props) => {
   }, [token])
 
   useEffect(() => {
+    if (aToken) {
+      localStorage.setItem('prescripto_aToken', aToken)
+    } else {
+      localStorage.removeItem('prescripto_aToken')
+    }
+  }, [aToken])
+
+  useEffect(() => {
+    if (dToken) {
+      localStorage.setItem('prescripto_dToken', dToken)
+    } else {
+      localStorage.removeItem('prescripto_dToken')
+    }
+  }, [dToken])
+
+  useEffect(() => {
     localStorage.setItem('prescripto_user_role', userRole)
   }, [userRole])
+
+  const adminLogout = () => {
+    setAToken('')
+    setDToken('')
+    localStorage.removeItem('prescripto_aToken')
+    localStorage.removeItem('prescripto_dToken')
+    setUserRole('patient')
+    showToast('success', 'Logged out of Admin Portal')
+  }
 
   const showToast = (type, message) => {
     setToast({ type, message })
@@ -206,6 +239,11 @@ const AppContextProvider = (props) => {
     currencySymbol,
     token,
     setToken,
+    aToken,
+    setAToken,
+    dToken,
+    setDToken,
+    adminLogout,
     userData,
     setUserData,
     appointments,

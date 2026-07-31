@@ -49,8 +49,8 @@ const PrescriptionModal = ({ appointment, onClose }) => {
                 <Stethoscope className='w-6 h-6' />
                 <span>Prescripto Health Medical Center</span>
               </div>
-              <p className='text-xs text-gray-500'>100 Health Sciences Plaza, Suite 400, New York</p>
-              <p className='text-xs text-gray-500'>Phone: +1 (800) 555-0199 | License: #MED-2026-8942</p>
+              <p className='text-xs text-gray-500'>100 Health Sciences Plaza, MG Road, Bengaluru, Karnataka</p>
+              <p className='text-xs text-gray-500'>Phone: +91 (800) 555-0199 | License: #MED-IN-2026-8942</p>
             </div>
 
             <div className='bg-indigo-50/70 p-3 rounded-2xl border border-indigo-100 text-right min-w-[200px]'>
@@ -64,7 +64,7 @@ const PrescriptionModal = ({ appointment, onClose }) => {
           <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100 text-xs'>
             <div>
               <span className='text-gray-400 block uppercase font-medium'>Patient Name</span>
-              <span className='font-bold text-gray-900 text-sm'>{patientData?.name || 'Alex Johnson'}</span>
+              <span className='font-bold text-gray-900 text-sm'>{patientData?.name || 'Aarav Sharma'}</span>
             </div>
             <div>
               <span className='text-gray-400 block uppercase font-medium'>Date Issued</span>

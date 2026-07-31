@@ -50,206 +50,206 @@ export const specialityData = [
 export const doctorsData = [
   {
     _id: 'doc1',
-    name: 'Dr. Richard James',
+    name: 'Dr. Rajesh Sharma',
     image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400',
     speciality: 'General physician',
     degree: 'MBBS, MD (Internal Medicine)',
     experience: '4 Years',
-    about: 'Dr. Richard James has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective management strategies for chronic conditions.',
+    about: 'Dr. Rajesh Sharma has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective management strategies for chronic conditions.',
     fees: 50,
     rating: 4.9,
     reviewsCount: 124,
     available: true,
     address: {
-      line1: '17th Cross, Richmond Circle',
-      line2: 'Ring Road, New York'
+      line1: '17th Cross, Indiranagar',
+      line2: 'MG Road, Bengaluru'
     }
   },
   {
     _id: 'doc2',
-    name: 'Dr. Emily Larson',
+    name: 'Dr. Ananya Rao',
     image: 'https://images.unsplash.com/photo-1594824813571-24a698277d33?auto=format&fit=crop&q=80&w=400',
     speciality: 'Gynecologist',
     degree: 'MBBS, MS (Obstetrics & Gynaecology)',
     experience: '3 Years',
-    about: 'Dr. Emily Larson is dedicated to empowering women throughout all stages of life, specializing in prenatal care, minimally invasive gynecological procedures, and reproductive health.',
+    about: 'Dr. Ananya Rao is dedicated to empowering women throughout all stages of life, specializing in prenatal care, minimally invasive gynecological procedures, and reproductive health.',
     fees: 60,
     rating: 4.8,
     reviewsCount: 98,
     available: true,
     address: {
-      line1: '27th Cross, Park Avenue',
-      line2: 'Downtown, Boston'
+      line1: '27th Main, HSR Layout',
+      line2: 'Sector 1, Bengaluru'
     }
   },
   {
     _id: 'doc3',
-    name: 'Dr. Sarah Patel',
+    name: 'Dr. Sneha Patel',
     image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400',
     speciality: 'Dermatologist',
     degree: 'MBBS, MD (Dermatology)',
     experience: '1 Year',
-    about: 'Dr. Sarah Patel provides personalized dermatological care ranging from acne management and skin allergies to advanced anti-aging treatments and laser therapies.',
+    about: 'Dr. Sneha Patel provides personalized dermatological care ranging from acne management and skin allergies to advanced anti-aging treatments and laser therapies.',
     fees: 40,
     rating: 4.7,
     reviewsCount: 82,
     available: true,
     address: {
-      line1: '37th Cross, Broadway Boulevard',
-      line2: 'Suite 400, Chicago'
+      line1: '37th Park View, Bandra West',
+      line2: 'Linking Road, Mumbai'
     }
   },
   {
     _id: 'doc4',
-    name: 'Dr. Christopher Lee',
+    name: 'Dr. Vikram Verma',
     image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400',
     speciality: 'Pediatrician',
     degree: 'MBBS, DCH (Pediatrics)',
     experience: '2 Years',
-    about: 'Dr. Christopher Lee creates a warm and reassuring environment for child growth monitoring, vaccinations, pediatric infectious diseases, and developmental care.',
+    about: 'Dr. Vikram Verma creates a warm and reassuring environment for child growth monitoring, vaccinations, pediatric infectious diseases, and developmental care.',
     fees: 45,
     rating: 4.9,
     reviewsCount: 140,
     available: true,
     address: {
-      line1: '47th Cross, Sunshine Lane',
-      line2: 'Westside, San Francisco'
+      line1: '47th Block, Connaught Place',
+      line2: 'Janpath, New Delhi'
     }
   },
   {
     _id: 'doc5',
-    name: 'Dr. Jennifer Garcia',
+    name: 'Dr. Kavita Narayanan',
     image: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=400',
     speciality: 'Neurologist',
     degree: 'MBBS, DM (Neurology)',
     experience: '5 Years',
-    about: 'Dr. Jennifer Garcia specializes in neurological conditions including migraine disorders, epilepsy management, stroke rehabilitation, and memory health.',
+    about: 'Dr. Kavita Narayanan specializes in neurological conditions including migraine disorders, epilepsy management, stroke rehabilitation, and memory health.',
     fees: 75,
     rating: 4.9,
     reviewsCount: 210,
     available: true,
     address: {
-      line1: '57th Cross, Metro View',
-      line2: 'Medical District, Seattle'
+      line1: '57th Cross, Jubilee Hills',
+      line2: 'Road No. 36, Hyderabad'
     }
   },
   {
     _id: 'doc6',
-    name: 'Dr. Andrew Williams',
+    name: 'Dr. Arjun Mehta',
     image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400',
     speciality: 'Gastroenterologist',
     degree: 'MBBS, DM (Gastroenterology)',
     experience: '4 Years',
-    about: 'Dr. Andrew Williams offers compassionate diagnostic endoscopy, liver wellness programs, and holistic digestive health therapies for acid reflux and IBS.',
+    about: 'Dr. Arjun Mehta offers compassionate diagnostic endoscopy, liver wellness programs, and holistic digestive health therapies for acid reflux and IBS.',
     fees: 65,
     rating: 4.8,
     reviewsCount: 115,
     available: true,
     address: {
-      line1: '67th Cross, Ocean Heights',
-      line2: 'Marina Bay, Miami'
+      line1: '67th Street, T. Nagar',
+      line2: 'Anna Salai, Chennai'
     }
   },
   {
     _id: 'doc7',
-    name: 'Dr. Christopher Davis',
+    name: 'Dr. Suresh Deshmukh',
     image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&q=80&w=400',
     speciality: 'General physician',
     degree: 'MBBS, MD',
     experience: '6 Years',
-    about: 'Dr. Christopher Davis focuses on preventative wellness screenings, lifestyle modification advice, and family health management.',
+    about: 'Dr. Suresh Deshmukh focuses on preventative wellness screenings, lifestyle modification advice, and family health management.',
     fees: 55,
     rating: 4.9,
     reviewsCount: 165,
     available: true,
     address: {
-      line1: '12th Elm Street',
-      line2: 'Austin, Texas'
+      line1: '12th Cross, Koramangala',
+      line2: '8th Block, Bengaluru'
     }
   },
   {
     _id: 'doc8',
-    name: 'Dr. Timothy White',
+    name: 'Dr. Tarun Banerjee',
     image: 'https://images.unsplash.com/photo-1622902046580-2b47f47f5471?auto=format&fit=crop&q=80&w=400',
     speciality: 'Gynecologist',
     degree: 'MBBS, MS',
     experience: '7 Years',
-    about: 'Dr. Timothy White is an experienced obstetrician dedicated to safe maternal-fetal care and women’s health wellness.',
+    about: 'Dr. Tarun Banerjee is an experienced obstetrician dedicated to safe maternal-fetal care and women’s health wellness.',
     fees: 70,
     rating: 4.9,
     reviewsCount: 180,
     available: true,
     address: {
-      line1: '88 Hillside Drive',
-      line2: 'Denver, Colorado'
+      line1: '88 Park Street',
+      line2: 'Camac Street Area, Kolkata'
     }
   },
   {
     _id: 'doc9',
-    name: 'Dr. Ava Martinez',
+    name: 'Dr. Aditi Kulkarni',
     image: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=400',
     speciality: 'Dermatologist',
     degree: 'MBBS, MD',
     experience: '3 Years',
-    about: 'Dr. Ava Martinez specializes in pediatric and adult dermatology, cosmetic rejuvenation, and eczema care.',
+    about: 'Dr. Aditi Kulkarni specializes in pediatric and adult dermatology, cosmetic rejuvenation, and eczema care.',
     fees: 50,
     rating: 4.8,
     reviewsCount: 92,
     available: true,
     address: {
-      line1: '45 Sunset Boulevard',
-      line2: 'Los Angeles, California'
+      line1: '45 FC Road, Shivaji Nagar',
+      line2: 'Deccan Gymkhana, Pune'
     }
   },
   {
     _id: 'doc10',
-    name: 'Dr. Jeffrey King',
+    name: 'Dr. Jayesh Kapoor',
     image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=400',
     speciality: 'Pediatrician',
     degree: 'MBBS, MD (Pediatrics)',
     experience: '5 Years',
-    about: 'Dr. Jeffrey King is passionate about child nutrition, pediatric preventive care, and adolescent medicine.',
+    about: 'Dr. Jayesh Kapoor is passionate about child nutrition, pediatric preventive care, and adolescent medicine.',
     fees: 50,
     rating: 4.8,
     reviewsCount: 130,
     available: true,
     address: {
-      line1: '90 Pine Wood Way',
-      line2: 'Atlanta, Georgia'
+      line1: '90 Civil Lines',
+      line2: 'Mall Road, Kanpur'
     }
   },
   {
     _id: 'doc11',
-    name: 'Dr. Zoe Bennett',
+    name: 'Dr. Zoya Khan',
     image: 'https://images.unsplash.com/photo-1594824813571-24a698277d33?auto=format&fit=crop&q=80&w=400',
     speciality: 'Neurologist',
     degree: 'MBBS, DM',
     experience: '4 Years',
-    about: 'Dr. Zoe Bennett brings expertise in neuro-diagnostics, neuropathy care, and brain health optimization.',
+    about: 'Dr. Zoya Khan brings expertise in neuro-diagnostics, neuropathy care, and brain health optimization.',
     fees: 80,
     rating: 4.9,
     reviewsCount: 175,
     available: true,
     address: {
-      line1: '14 Magnolia Avenue',
-      line2: 'Philadelphia, Pennsylvania'
+      line1: '14 Aliganj Road',
+      line2: 'Hazratganj, Lucknow'
     }
   },
   {
     _id: 'doc12',
-    name: 'Dr. Patrick Harris',
+    name: 'Dr. Pradeep Nair',
     image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400',
     speciality: 'Gastroenterologist',
     degree: 'MBBS, DM',
     experience: '5 Years',
-    about: 'Dr. Patrick Harris provides evidence-based therapies for digestive system conditions and gastrointestinal health.',
+    about: 'Dr. Pradeep Nair provides evidence-based therapies for digestive system conditions and gastrointestinal health.',
     fees: 60,
     rating: 4.7,
     reviewsCount: 88,
     available: true,
     address: {
-      line1: '33 Riverfront Drive',
-      line2: 'Dallas, Texas'
+      line1: '33 MG Road, Ernakulam',
+      line2: 'Marine Drive, Kochi'
     }
   }
 ]

@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <span className='font-bold text-gray-900 block text-sm'>Headquarters</span>
-                  <p className='mt-0.5 leading-relaxed'>100 Health Sciences Plaza, Suite 400, New York, NY 10001</p>
+                  <p className='mt-0.5 leading-relaxed'>100 Health Sciences Plaza, MG Road, Bengaluru, Karnataka 560001</p>
                 </div>
               </div>
 
@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <span className='font-bold text-gray-900 block text-sm'>Phone Support</span>
-                  <p className='mt-0.5'>+1 (800) 555-0199 / +1 (212) 555-0144</p>
+                  <p className='mt-0.5'>+91 (800) 555-0199 / +91 (80) 2555-0144</p>
                 </div>
               </div>
 

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { AppContext } from '../context/AppContext'
+import AdminLogin from './AdminLogin'
 import { 
   Users, 
   Calendar, 
@@ -16,11 +17,15 @@ import {
   ShieldAlert,
   Clock,
   Send,
-  X
+  X,
+  LogOut
 } from 'lucide-react'
 
 const AdminDashboard = () => {
   const { 
+    aToken,
+    dToken,
+    adminLogout,
     doctors, 
     appointments, 
     currencySymbol, 
@@ -30,6 +35,10 @@ const AdminDashboard = () => {
     addPrescription,
     cancelAppointment 
   } = useContext(AppContext)
+
+  if (!aToken && !dToken) {
+    return <AdminLogin />
+  }
 
   const [activeTab, setActiveTab] = useState('dashboard') // 'dashboard' | 'add-doctor' | 'doctors-list' | 'all-appointments' | 'doctor-panel'
 
@@ -124,10 +133,20 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        <span className='text-xs font-semibold bg-emerald-500/20 text-emerald-300 px-3.5 py-1.5 rounded-full border border-emerald-500/30 flex items-center gap-1.5'>
-          <span className='w-2 h-2 rounded-full bg-emerald-400 animate-pulse'></span>
-          System Live
-        </span>
+        <div className='flex items-center gap-3'>
+          <span className='text-xs font-semibold bg-emerald-500/20 text-emerald-300 px-3.5 py-1.5 rounded-full border border-emerald-500/30 flex items-center gap-1.5'>
+            <span className='w-2 h-2 rounded-full bg-emerald-400 animate-pulse'></span>
+            {aToken ? 'Admin Authenticated' : 'Doctor Authenticated'}
+          </span>
+
+          <button 
+            onClick={adminLogout}
+            className='px-3.5 py-1.5 bg-red-500/20 hover:bg-red-500/30 text-red-300 rounded-full text-xs font-semibold border border-red-500/30 transition-colors flex items-center gap-1.5 cursor-pointer'
+          >
+            <LogOut className='w-3.5 h-3.5' />
+            Logout
+          </button>
+        </div>
       </div>
 
       {/* Metrics Row */}
@@ -239,8 +258,8 @@ const AdminDashboard = () => {
                     </td>
 
                     <td className='p-3.5'>
-                      <p className='font-bold text-gray-900'>{app.patientData?.name || 'Alex Johnson'}</p>
-                      <p className='text-[10px] text-gray-400'>{app.patientData?.email || 'alex@example.com'}</p>
+                      <p className='font-bold text-gray-900'>{app.patientData?.name || 'Aarav Sharma'}</p>
+                      <p className='text-[10px] text-gray-400'>{app.patientData?.email || 'aarav@example.com'}</p>
                     </td>
 
                     <td className='p-3.5'>
@@ -475,7 +494,7 @@ const AdminDashboard = () => {
                 <div className='flex items-center gap-4'>
                   <img src={app.docData.image} alt="" className='w-12 h-12 rounded-xl object-cover border border-gray-300' />
                   <div>
-                    <h4 className='font-bold text-sm text-gray-900'>{app.patientData?.name || 'Alex Johnson'}</h4>
+                    <h4 className='font-bold text-sm text-gray-900'>{app.patientData?.name || 'Aarav Sharma'}</h4>
                     <p className='text-xs text-indigo-600 font-medium'>Assigned Doctor: {app.docData.name}</p>
                     <p className='text-[11px] text-gray-500'>Date: {app.slotDate.replace(/_/g, '/')} at {app.slotTime}</p>
                   </div>
@@ -527,7 +546,7 @@ const AdminDashboard = () => {
               <div>
                 <label className='block font-bold text-gray-700 mb-1'>Patient</label>
                 <p className='p-2.5 bg-slate-50 border border-gray-200 rounded-xl font-bold text-gray-900 text-sm'>
-                  {prescriptionApp.patientData?.name || 'Alex Johnson'} ({prescriptionApp.docData.name})
+                  {prescriptionApp.patientData?.name || 'Aarav Sharma'} ({prescriptionApp.docData.name})
                 </p>
               </div>
 
