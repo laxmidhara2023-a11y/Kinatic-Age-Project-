@@ -8,17 +8,17 @@ const AppContextProvider = (props) => {
   
   // Local storage initialization for persistent state
   const [doctors, setDoctors] = useState(() => {
-    const saved = localStorage.getItem('prescripto_doctors_v2')
+    const saved = localStorage.getItem('prescripto_doctors_v5')
     return saved ? JSON.parse(saved) : doctorsData
   })
 
   const [appointments, setAppointments] = useState(() => {
-    const saved = localStorage.getItem('prescripto_appointments_v2')
+    const saved = localStorage.getItem('prescripto_appointments_v5')
     return saved ? JSON.parse(saved) : initialAppointmentsData
   })
 
   const [userData, setUserData] = useState(() => {
-    const saved = localStorage.getItem('prescripto_userdata_v2')
+    const saved = localStorage.getItem('prescripto_userdata_v5')
     return saved ? JSON.parse(saved) : {
       name: 'Aarav Sharma',
       email: 'aarav.sharma@example.com',
@@ -55,15 +55,15 @@ const AppContextProvider = (props) => {
 
   // Save changes to LocalStorage
   useEffect(() => {
-    localStorage.setItem('prescripto_doctors_v2', JSON.stringify(doctors))
+    localStorage.setItem('prescripto_doctors_v5', JSON.stringify(doctors))
   }, [doctors])
 
   useEffect(() => {
-    localStorage.setItem('prescripto_appointments_v2', JSON.stringify(appointments))
+    localStorage.setItem('prescripto_appointments_v5', JSON.stringify(appointments))
   }, [appointments])
 
   useEffect(() => {
-    localStorage.setItem('prescripto_userdata_v2', JSON.stringify(userData))
+    localStorage.setItem('prescripto_userdata_v5', JSON.stringify(userData))
   }, [userData])
 
   useEffect(() => {

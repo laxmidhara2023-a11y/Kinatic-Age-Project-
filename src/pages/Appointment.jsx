@@ -127,6 +127,7 @@ const Appointment = () => {
           <img 
             src={docInfo.image} 
             alt={docInfo.name} 
+            referrerPolicy="no-referrer"
             className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
           />
           <div className='absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 text-gray-800 shadow-sm'>

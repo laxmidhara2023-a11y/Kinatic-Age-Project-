@@ -50,206 +50,206 @@ export const specialityData = [
 export const doctorsData = [
   {
     _id: 'doc1',
-    name: 'Dr. Rajesh Sharma',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Shah Rukh Khan',
+    image: '/doctors/doc1.jpg',
     speciality: 'General physician',
     degree: 'MBBS, MD (Internal Medicine)',
-    experience: '4 Years',
-    about: 'Dr. Rajesh Sharma has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective management strategies for chronic conditions.',
-    fees: 50,
-    rating: 4.9,
-    reviewsCount: 124,
+    experience: '15 Years',
+    about: 'Dr. Shah Rukh Khan has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective management strategies for chronic conditions.',
+    fees: 500,
+    rating: 5.0,
+    reviewsCount: 450,
     available: true,
     address: {
-      line1: '17th Cross, Indiranagar',
-      line2: 'MG Road, Bengaluru'
+      line1: 'Mannat Healthcare, Bandstand',
+      line2: 'Bandra West, Mumbai'
     }
   },
   {
     _id: 'doc2',
-    name: 'Dr. Ananya Rao',
-    image: 'https://images.unsplash.com/photo-1594824813571-24a698277d33?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Deepika Padukone',
+    image: '/doctors/doc2.png',
     speciality: 'Gynecologist',
     degree: 'MBBS, MS (Obstetrics & Gynaecology)',
-    experience: '3 Years',
-    about: 'Dr. Ananya Rao is dedicated to empowering women throughout all stages of life, specializing in prenatal care, minimally invasive gynecological procedures, and reproductive health.',
-    fees: 60,
-    rating: 4.8,
-    reviewsCount: 98,
+    experience: '10 Years',
+    about: 'Dr. Deepika Padukone is dedicated to empowering women throughout all stages of life, specializing in prenatal care, minimally invasive gynecological procedures, and reproductive health.',
+    fees: 600,
+    rating: 4.9,
+    reviewsCount: 380,
     available: true,
     address: {
-      line1: '27th Main, HSR Layout',
-      line2: 'Sector 1, Bengaluru'
+      line1: 'Prabhadevi Wellness Center',
+      line2: 'Worli, Mumbai'
     }
   },
   {
     _id: 'doc3',
-    name: 'Dr. Sneha Patel',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Priyanka Chopra',
+    image: '/doctors/doc3.jpg',
     speciality: 'Dermatologist',
     degree: 'MBBS, MD (Dermatology)',
-    experience: '1 Year',
-    about: 'Dr. Sneha Patel provides personalized dermatological care ranging from acne management and skin allergies to advanced anti-aging treatments and laser therapies.',
-    fees: 40,
-    rating: 4.7,
-    reviewsCount: 82,
+    experience: '12 Years',
+    about: 'Dr. Priyanka Chopra provides personalized dermatological care ranging from acne management and skin allergies to advanced anti-aging treatments and laser therapies.',
+    fees: 550,
+    rating: 4.9,
+    reviewsCount: 310,
     available: true,
     address: {
-      line1: '37th Park View, Bandra West',
-      line2: 'Linking Road, Mumbai'
+      line1: 'Juhu Tara Road Skin Clinic',
+      line2: 'Juhu, Mumbai'
     }
   },
   {
     _id: 'doc4',
-    name: 'Dr. Vikram Verma',
-    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Amitabh Bachchan',
+    image: '/doctors/doc4.jpg',
     speciality: 'Pediatrician',
     degree: 'MBBS, DCH (Pediatrics)',
-    experience: '2 Years',
-    about: 'Dr. Vikram Verma creates a warm and reassuring environment for child growth monitoring, vaccinations, pediatric infectious diseases, and developmental care.',
-    fees: 45,
-    rating: 4.9,
-    reviewsCount: 140,
+    experience: '25 Years',
+    about: 'Dr. Amitabh Bachchan creates a warm and reassuring environment for child growth monitoring, vaccinations, pediatric infectious diseases, and developmental care.',
+    fees: 700,
+    rating: 5.0,
+    reviewsCount: 620,
     available: true,
     address: {
-      line1: '47th Block, Connaught Place',
-      line2: 'Janpath, New Delhi'
+      line1: 'Jalsa Pediatric Institute',
+      line2: 'Juhu Scheme, Mumbai'
     }
   },
   {
     _id: 'doc5',
-    name: 'Dr. Kavita Narayanan',
-    image: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Vidya Balan',
+    image: '/doctors/doc5.jpg',
     speciality: 'Neurologist',
     degree: 'MBBS, DM (Neurology)',
-    experience: '5 Years',
-    about: 'Dr. Kavita Narayanan specializes in neurological conditions including migraine disorders, epilepsy management, stroke rehabilitation, and memory health.',
-    fees: 75,
+    experience: '11 Years',
+    about: 'Dr. Vidya Balan specializes in neurological conditions including migraine disorders, epilepsy management, stroke rehabilitation, and memory health.',
+    fees: 650,
     rating: 4.9,
-    reviewsCount: 210,
+    reviewsCount: 290,
     available: true,
     address: {
-      line1: '57th Cross, Jubilee Hills',
-      line2: 'Road No. 36, Hyderabad'
+      line1: 'Chembur Neuro Speciality',
+      line2: 'Central Avenue, Mumbai'
     }
   },
   {
     _id: 'doc6',
-    name: 'Dr. Arjun Mehta',
-    image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Hrithik Roshan',
+    image: '/doctors/doc6.jpg',
     speciality: 'Gastroenterologist',
     degree: 'MBBS, DM (Gastroenterology)',
-    experience: '4 Years',
-    about: 'Dr. Arjun Mehta offers compassionate diagnostic endoscopy, liver wellness programs, and holistic digestive health therapies for acid reflux and IBS.',
-    fees: 65,
-    rating: 4.8,
-    reviewsCount: 115,
+    experience: '14 Years',
+    about: 'Dr. Hrithik Roshan offers compassionate diagnostic endoscopy, liver wellness programs, and holistic digestive health therapies for acid reflux and IBS.',
+    fees: 600,
+    rating: 4.9,
+    reviewsCount: 340,
     available: true,
     address: {
-      line1: '67th Street, T. Nagar',
-      line2: 'Anna Salai, Chennai'
+      line1: 'Juhu Beach Diagnostic Center',
+      line2: 'Juhu, Mumbai'
     }
   },
   {
     _id: 'doc7',
-    name: 'Dr. Suresh Deshmukh',
-    image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Akshay Kumar',
+    image: '/doctors/doc7.jpg',
     speciality: 'General physician',
     degree: 'MBBS, MD',
-    experience: '6 Years',
-    about: 'Dr. Suresh Deshmukh focuses on preventative wellness screenings, lifestyle modification advice, and family health management.',
-    fees: 55,
-    rating: 4.9,
-    reviewsCount: 165,
+    experience: '16 Years',
+    about: 'Dr. Akshay Kumar focuses on preventative wellness screenings, fitness and lifestyle modification advice, and family health management.',
+    fees: 500,
+    rating: 4.8,
+    reviewsCount: 410,
     available: true,
     address: {
-      line1: '12th Cross, Koramangala',
-      line2: '8th Block, Bengaluru'
+      line1: 'Lokhandwala Fitness & Health',
+      line2: 'Andheri West, Mumbai'
     }
   },
   {
     _id: 'doc8',
-    name: 'Dr. Tarun Banerjee',
-    image: 'https://images.unsplash.com/photo-1622902046580-2b47f47f5471?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Katrina Kaif',
+    image: '/doctors/doc8.jpg',
     speciality: 'Gynecologist',
     degree: 'MBBS, MS',
-    experience: '7 Years',
-    about: 'Dr. Tarun Banerjee is an experienced obstetrician dedicated to safe maternal-fetal care and women’s health wellness.',
-    fees: 70,
+    experience: '9 Years',
+    about: 'Dr. Katrina Kaif is an experienced obstetrician dedicated to safe maternal-fetal care and women’s health wellness.',
+    fees: 550,
     rating: 4.9,
-    reviewsCount: 180,
+    reviewsCount: 275,
     available: true,
     address: {
-      line1: '88 Park Street',
-      line2: 'Camac Street Area, Kolkata'
+      line1: 'Bandra West Women Clinic',
+      line2: 'Hill Road, Mumbai'
     }
   },
   {
     _id: 'doc9',
-    name: 'Dr. Aditi Kulkarni',
-    image: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Kareena Kapoor',
+    image: '/doctors/doc9.jpg',
     speciality: 'Dermatologist',
     degree: 'MBBS, MD',
-    experience: '3 Years',
-    about: 'Dr. Aditi Kulkarni specializes in pediatric and adult dermatology, cosmetic rejuvenation, and eczema care.',
-    fees: 50,
-    rating: 4.8,
-    reviewsCount: 92,
+    experience: '13 Years',
+    about: 'Dr. Kareena Kapoor specializes in pediatric and adult dermatology, cosmetic rejuvenation, and eczema care.',
+    fees: 600,
+    rating: 4.9,
+    reviewsCount: 360,
     available: true,
     address: {
-      line1: '45 FC Road, Shivaji Nagar',
-      line2: 'Deccan Gymkhana, Pune'
+      line1: 'Fortune Heights Aesthetic Clinic',
+      line2: 'Bandra West, Mumbai'
     }
   },
   {
     _id: 'doc10',
-    name: 'Dr. Jayesh Kapoor',
-    image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Ayushmann Khurrana',
+    image: '/doctors/doc10.jpg',
     speciality: 'Pediatrician',
     degree: 'MBBS, MD (Pediatrics)',
-    experience: '5 Years',
-    about: 'Dr. Jayesh Kapoor is passionate about child nutrition, pediatric preventive care, and adolescent medicine.',
-    fees: 50,
+    experience: '8 Years',
+    about: 'Dr. Ayushmann Khurrana is passionate about child nutrition, pediatric preventive care, and adolescent medicine.',
+    fees: 450,
     rating: 4.8,
-    reviewsCount: 130,
+    reviewsCount: 220,
     available: true,
     address: {
-      line1: '90 Civil Lines',
-      line2: 'Mall Road, Kanpur'
+      line1: 'Andheri Child Wellness',
+      line2: 'Seven Bungalows, Mumbai'
     }
   },
   {
     _id: 'doc11',
-    name: 'Dr. Zoya Khan',
-    image: 'https://images.unsplash.com/photo-1594824813571-24a698277d33?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Alia Bhatt',
+    image: '/doctors/doc11.jpg',
     speciality: 'Neurologist',
     degree: 'MBBS, DM',
-    experience: '4 Years',
-    about: 'Dr. Zoya Khan brings expertise in neuro-diagnostics, neuropathy care, and brain health optimization.',
-    fees: 80,
+    experience: '7 Years',
+    about: 'Dr. Alia Bhatt brings expertise in neuro-diagnostics, neuropathy care, and brain health optimization.',
+    fees: 600,
     rating: 4.9,
-    reviewsCount: 175,
+    reviewsCount: 300,
     available: true,
     address: {
-      line1: '14 Aliganj Road',
-      line2: 'Hazratganj, Lucknow'
+      line1: 'Vastu Neuro Care',
+      line2: 'Pali Hill, Mumbai'
     }
   },
   {
     _id: 'doc12',
-    name: 'Dr. Pradeep Nair',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400',
+    name: 'Dr. Ranbir Kapoor',
+    image: '/doctors/doc12.jpg',
     speciality: 'Gastroenterologist',
     degree: 'MBBS, DM',
-    experience: '5 Years',
-    about: 'Dr. Pradeep Nair provides evidence-based therapies for digestive system conditions and gastrointestinal health.',
-    fees: 60,
-    rating: 4.7,
-    reviewsCount: 88,
+    experience: '10 Years',
+    about: 'Dr. Ranbir Kapoor provides evidence-based therapies for digestive system conditions and gastrointestinal health.',
+    fees: 550,
+    rating: 4.8,
+    reviewsCount: 280,
     available: true,
     address: {
-      line1: '33 MG Road, Ernakulam',
-      line2: 'Marine Drive, Kochi'
+      line1: 'Pali Hill Digestive Center',
+      line2: 'Bandra West, Mumbai'
     }
   }
 ]
